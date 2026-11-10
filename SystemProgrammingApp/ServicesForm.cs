@@ -62,19 +62,33 @@ namespace SystemProgrammingApp
 
             btnPanel.Controls.AddRange(new Control[] { btnRefresh, btnStart, btnStop, btnRestart });
 
+            var btnBack = new Button
+            {
+                Text = "Back to Main Menu",
+                Location = new Point(20, 440),
+                Size = new Size(140, 30),
+                BackColor = Color.FromArgb(45, 45, 48),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 9F)
+            };
+            btnBack.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
+            btnBack.Click += new EventHandler(delegate(object s, EventArgs e) { this.Close(); });
+
             var lblStatus = new Label
             {
                 Text = "Select a service, then click an action. Admin rights required to start/stop services.",
                 Font = new Font("Segoe UI", 8F, FontStyle.Italic),
                 ForeColor = Color.LightGray,
                 AutoSize = true,
-                Location = new Point(20, 470),
+                Location = new Point(20, 480),
                 Size = new Size(760, 20)
             };
 
             this.Controls.Add(lblTitle);
             this.Controls.Add(listViewServices);
             this.Controls.Add(btnPanel);
+            this.Controls.Add(btnBack);
             this.Controls.Add(lblStatus);
         }
 
