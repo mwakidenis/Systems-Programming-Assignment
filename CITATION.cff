@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Systems-Programming-Assignment"
+message: "If you use this software, please cite it as below."
+authors:
+  - given-names: Denis
+    family-names: Mwakide
+repository: "https://github.com/mwakidenis/Systems-Programming-Assignment"
+url: "https://github.com/mwakidenis/Systems-Programming-Assignment"
+date-released: 2026-11-10
+version: 1.0.0
+license: MIT
+type: software
+contact:
+  - given-names: Denis
+    family-names: Mwakide
+    email: denis.mwakide@example.com
+keywords:
+  - windows-forms
+  - systems-programming
+  - process-management
+  - windows-services
+  - performance-monitoring
+  - csharp
+abstract: >
+  A single Windows Forms application featuring a dark-mode dashboard that opens
+  five module forms interacting directly with Windows OS resources: process
+  management, Windows services control, system performance monitoring,
+  hardware & OS information, and thread & memory inspection.
