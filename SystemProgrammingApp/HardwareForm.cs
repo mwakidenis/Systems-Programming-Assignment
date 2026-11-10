@@ -63,9 +63,9 @@ namespace SystemProgrammingApp
 
             var btnClose = new Button
             {
-                Text = "Close",
+                Text = "Back to Main Menu",
                 Location = new Point(140, 490),
-                Size = new Size(100, 30),
+                Size = new Size(140, 30),
                 BackColor = Color.FromArgb(45, 45, 48),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,

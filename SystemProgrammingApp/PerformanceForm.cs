@@ -113,6 +113,20 @@ namespace SystemProgrammingApp
             this.Controls.Add(btnToggle);
             this.Controls.Add(lblStatus);
 
+            var btnBack = new Button
+            {
+                Text = "Back to Main Menu",
+                Location = new Point(20, 330),
+                Size = new Size(140, 30),
+                BackColor = Color.FromArgb(45, 45, 48),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 9F)
+            };
+            btnBack.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
+            btnBack.Click += new EventHandler(delegate(object s, EventArgs e) { this.Close(); });
+            this.Controls.Add(btnBack);
+
             monitorTimer = new Timer { Interval = 1000 };
             monitorTimer.Tick += new EventHandler(MonitorTimer_Tick);
         }
