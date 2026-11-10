@@ -104,19 +104,34 @@ namespace SystemProgrammingApp
                 WordWrap = false
             };
 
+            this.Controls.Add(lblTitle);
+            this.Controls.Add(cboPanel);
+            this.Controls.Add(txtOutput);
+
+            var btnBack = new Button
+            {
+                Text = "Back to Main Menu",
+                Location = new Point(20, 475),
+                Size = new Size(140, 30),
+                BackColor = Color.FromArgb(45, 45, 48),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 9F)
+            };
+            btnBack.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
+            btnBack.Click += new EventHandler(delegate(object s, EventArgs e) { this.Close(); });
+            this.Controls.Add(btnBack);
+
             var lblStatus = new Label
             {
                 Text = "Inspects process threads (concurrency) and loaded modules (DLL memory allocation). Admin rights may be needed.",
                 Font = new Font("Segoe UI", 8F, FontStyle.Italic),
                 ForeColor = Color.LightGray,
                 AutoSize = true,
-                Location = new Point(20, 475),
-                Size = new Size(760, 20)
+                Location = new Point(180, 482),
+                Size = new Size(600, 20)
             };
 
-            this.Controls.Add(lblTitle);
-            this.Controls.Add(cboPanel);
-            this.Controls.Add(txtOutput);
             this.Controls.Add(lblStatus);
         }
 
