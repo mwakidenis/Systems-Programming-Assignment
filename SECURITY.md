@@ -13,7 +13,7 @@ This project is a student systems-programming assignment. Security patches are n
 If you discover a security issue, please:
 
 1. **Do not** open a public issue.
-2. Contact the maintainer directly via GitHub.
+2. Contact the maintainer **mwakidenis** directly via GitHub: https://github.com/mwakidenis
 3. Include steps to reproduce, affected files, and potential impact.
 
 We will acknowledge receipt within 7 business days and work on a resolution.
