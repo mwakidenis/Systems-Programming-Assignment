@@ -53,6 +53,10 @@ git commit -m "feat: your unique message here"
 
 Be respectful. This is a learning assignment — help others learn too.
 
+## Maintainer
+
+**mwakidenis** — https://github.com/mwakidenis
+
 ## License
 
 Educational use — systems programming assignment.
