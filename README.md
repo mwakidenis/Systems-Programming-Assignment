@@ -6,7 +6,7 @@ A single Windows Forms application featuring a dark-mode Main Menu (Dashboard) t
 
 ## Author
 
-**mwakidenis** — Denis Mwakide
+**mwakidenis** 
 - GitHub: https://github.com/mwakidenis
 - Repository: https://github.com/mwakidenis/Systems-Programming-Assignment
 
